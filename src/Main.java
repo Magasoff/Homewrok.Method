@@ -44,7 +44,7 @@ public class Main {
             System.out.println("Время доставки = " + ((distanse - 20) / 40 + 1));
             return;
         }
-        System.out.println("Доставка не осуществляется");
+        System.out.println("Доставка к сожалению не осуществляется");
     }
 }
 
