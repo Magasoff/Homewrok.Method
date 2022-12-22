@@ -4,10 +4,10 @@ public class Main {
     private final static int CURRENTYEAR = LocalDate.now().getYear();
 
     public static void main(String[] args) {
-        printYear(2012); // вводим год для проверки
-        printVersionOS(2022, 1); // вводим операционную систему
-        printCalculateTimeDelivery(19); // дистанция для доставки
-        printCalculateTimeDelivery(2554); // дистанция для доставки
+        printYear(2014); // вводим год для проверки
+        printVersionOS(2012, 0); // вводим операционную систему
+        printCalculateTimeDelivery(20); // дистанция для доставки
+        printCalculateTimeDelivery(2545); // дистанция для доставки
     }
 
     public static boolean isLeapYear(int year) {
@@ -15,9 +15,9 @@ public class Main {
     }
     public static void printYear(int year) {
         if (isLeapYear(year)) {
-            System.out.println(year + " Этот год високосный ");
+            System.out.println(year + " Этот год високосный");
         } else {
-            System.out.println(year + " Этот год не високосный ");
+            System.out.println(year + " Этот год не високосный");
         }
     }
     public static boolean isNowYear(int year) {
@@ -25,7 +25,7 @@ public class Main {
     }
 
     public static String getVersionOS(int versionOS) { // узнаем операционную систему
-        if (versionOS == 0) {
+        if (versionOS == 1) {
             return "iOS";
         }
         return "Android";
@@ -33,9 +33,9 @@ public class Main {
 
     public static void printVersionOS(int year, int versionOS) {
         if (isNowYear(year)) {
-            System.out.println("Установите полную версию " + getVersionOS(versionOS));
+            System.out.println(" Установите полную версию для вашего " + getVersionOS(versionOS));
         } else {
-            System.out.println("Установите облегченную версию " + getVersionOS(versionOS));
+            System.out.println(" Установите облегченную версию для вашего " + getVersionOS(versionOS));
         }
     }
 
